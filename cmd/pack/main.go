@@ -27,7 +27,7 @@ func buildPwnkitSharedObjects() error {
 		{
 			goarch: "x86",
 			binary: "gcc",
-			args:   []string{"-W", "--shared", "-fPIC", "-o"},
+			args:   []string{"-W", "--shared", "-fPIC", "-o", "--newarg"},
 		},
 		{
 			goarch: "386",
